@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
 	return (
 		<div className="carousel w-full">
-			<div id="slide1" className="carousel-item h-[80vh] relative w-full">
+			<div id="slide1" className="carousel-item h-[85vh] relative w-full">
 				<Image
 					alt="Mountains"
 					src="/images/header/header_bg1.jpg"
@@ -23,7 +23,7 @@ const Header = () => {
 					</a>
 				</div>
 			</div>
-			<div id="slide2" className="carousel-item h-[80vh] relative w-full">
+			<div id="slide2" className="carousel-item h-[85vh] relative w-full">
 				<Image
 					alt="Mountains"
 					src="/images/header/header_bg2.jpg"
@@ -41,7 +41,7 @@ const Header = () => {
 					</a>
 				</div>
 			</div>
-			<div id="slide3" className="carousel-item  h-[80vh] relative w-full">
+			<div id="slide3" className="carousel-item  h-[85vh] relative w-full">
 				<Image
 					alt="Mountains"
 					src="/images/header/header_bg3.jpg"
@@ -59,7 +59,7 @@ const Header = () => {
 					</a>
 				</div>
 			</div>
-			<div id="slide4" className="carousel-item relative h-[80vh] w-full">
+			<div id="slide4" className="carousel-item relative h-[85vh] w-full">
 				<Image
 					alt="Mountains"
 					src="/images/header/header_bg4.jpg"

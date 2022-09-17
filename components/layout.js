@@ -1,4 +1,5 @@
 import React from "react";
+import Explore from "./Home/explore";
 import Footer from "./shared/footer";
 import Navbar from "./shared/navbar";
 
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
 		<>
 			<Navbar />
 			{children}
+			<Explore />
 		</>
 	);
 };
