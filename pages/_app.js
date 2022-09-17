@@ -3,9 +3,11 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<div data-theme="winter">
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</div>
 	);
 }
 
