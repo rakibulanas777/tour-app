@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/header/header";
+import Explore from "../components/Home/explore";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ posts }) {
 	return (
 		<div className={styles.container} data-theme="light">
 			<Head>
@@ -13,6 +14,16 @@ export default function Home() {
 			</Head>
 
 			<Header />
+			<Explore post={posts} />
 		</div>
 	);
 }
+export const getServerSideProps = async () => {
+	const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+	const data = await res.json();
+	return {
+		props: {
+			posts: data,
+		},
+	};
+};

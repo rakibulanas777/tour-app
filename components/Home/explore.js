@@ -1,6 +1,10 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
-const Explore = () => {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { data } from "autoprefixer";
+
+const Explore = ({ image }) => {
 	return (
 		<div className="explore py-8">
 			<div className="text-2xl font-bold text-center text-slate-">
@@ -11,6 +15,9 @@ const Explore = () => {
 						loop: true,
 					}}
 				/>
+				{post.map((images) => {
+					<img src={images.image} alt="" srcset="" />;
+				})}
 			</div>
 		</div>
 	);
